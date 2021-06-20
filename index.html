@@ -2,119 +2,7 @@
   <head>
     <title>Play 2048</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <style>
-      :root {
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-      }
-      .cell {
-        width: 100px;
-        height: 72px;
-        margin: 4px;
-        background: grey;
-        display: inline-block;
-        border-radius: 4px;
-        vertical-align: top;
-        text-align: center;
-        font-size: 40px;
-        padding-top: 28px;
-        color: gray;
-        font-weight: bolder;
-      }
-      #box {
-        position: relative;
-        width: 434px;
-        height: 434px;
-        padding: 4px;
-        margin: auto;
-        background: #bbada0;
-        border-radius: 5px;
-        font-size: 0px;
-        box-shadow: 3px 3px 10px 2px gray;
-      }
-      #gameover {
-        display: none;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 440px;
-        height: 255px;
-        z-index: 5;
-        background: rgba(255, 255, 255, 0.5);
-        color: indianred;
-        text-align: center;
-        font-size: 60px;
-        font-family: fantasy;
-        padding-top: 185px;
-      }
-      #info {
-        width: 500px;
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-        text-align: center;
-      }
-      #score {
-        text-align: center;
-        color: darkslategray;
-        font-size: 40px;
-        font-family: sans-serif;
-      }
-      #newGame {
-        border-radius: 10px;
-        padding: 15px;
-        background: salmon;
-        border: none;
-        font-size: 25px;
-        display: block;
-        margin: auto;
-        margin-bottom: 20px;
-        box-shadow: 1px 1px 15px grey;
-        color: dimgrey;
-      }
-      button:focus {
-        outline: 0;
-      }
-      #newGame:hover {
-        cursor: pointer;
-        box-shadow: 0px 0px 7px black;
-      }
-      @media (max-width: 510px) {
-        .cell {
-          width: 70px;
-          height: 52px;
-          margin: 2px;
-          font-size: 28px;
-          padding-top: 18px;
-        }
-        #box {
-          width: 297px;
-          height: 297px;
-          padding: 2px;
-        }
-        #gameover {
-          width: 300px;
-          height: 180px;
-          font-size: 30px;
-          padding-top: 120px;
-        }
-        #info {
-          width: 240px;
-        }
-        #score {
-          font-size: 22px;
-        }
-        #newGame {
-          padding: 10px;
-          font-size: 22px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" type="image/png" href="icon.png" />
   </head>
   <body>
@@ -143,5 +31,5 @@
     </span>
   </body>
   <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
-  <script src="game.js"></script>
+  <script src="./js/index.js"></script>
 </html>
